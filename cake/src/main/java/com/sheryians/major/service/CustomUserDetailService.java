@@ -20,9 +20,9 @@ public class CustomUserDetailService implements UserDetailsService {
     private static final Logger logger = LoggerFactory.getLogger(CustomUserDetailService.class);
 
     @Autowired
-    UserRepository userRepository;
+    private UserRepository userRepository;
     @Autowired
-    BCryptPasswordEncoder bCryptPasswordEncoder;
+    private BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {

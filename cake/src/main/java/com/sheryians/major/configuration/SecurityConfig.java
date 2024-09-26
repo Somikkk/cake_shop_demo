@@ -17,10 +17,10 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
-    GoogleOAuth2SuccessHandler googleOAuth2SuccessHandler;
+    private GoogleOAuth2SuccessHandler googleOAuth2SuccessHandler;
 
     @Autowired
-    CustomUserDetailService customUserDetailService;
+    private CustomUserDetailService customUserDetailService;
 
 
     @Override

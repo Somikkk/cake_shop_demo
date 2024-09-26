@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class CartController {
     @Autowired
-    ProductService productService;
+    private ProductService productService;
 
     @GetMapping("/addToCart/{id}")
     public String addToCart(@PathVariable int id) {

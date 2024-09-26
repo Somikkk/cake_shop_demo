@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class HomeController {
     @Autowired
-    CategoryService categoryService;
+    private CategoryService categoryService;
     @Autowired
-    ProductService productService;
+    private ProductService productService;
 
     @GetMapping({"/", "/home"})
     public String home(Model model) {

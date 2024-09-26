@@ -23,9 +23,9 @@ import java.util.List;
 @Component
 public class GoogleOAuth2SuccessHandler implements AuthenticationSuccessHandler {
     @Autowired
-    RoleRepository roleRepository;
+    private RoleRepository roleRepository;
     @Autowired
-    UserRepository userRepository;
+    private UserRepository userRepository;
 
     private RedirectStrategy redirectStrategy = new DefaultRedirectStrategy();
 
